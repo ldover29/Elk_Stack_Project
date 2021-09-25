@@ -1,5 +1,5 @@
 # Elk_Stack_Project
-A brief look into automating an ELK stack deployment project. 
+UofT Cybersecurity Project 1: A brief look into automating ELK Stack - By LaJuan Dover
 
 ## Automated ELK Stack Deployment
 
