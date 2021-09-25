@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!Images/docker_ps_output.png
+Images/docker_ps_output.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -94,11 +94,11 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the configuration and playbook file that is provided to "etc/ansible" directory in the ansible container
 - Update the "hosts" file to include the private IP address of the machine that will be installing and configure ELK.
-- e.g
-- [webservers]
-- [your.VM.IP] ansible_python_interpreter=/usr/bin/python3	
-- [your.VM.IP] ansible_python_interpreter=/usr/bin/python3
+  e.g
+  [webservers]
+  - [your.VM.IP] ansible_python_interpreter=/usr/bin/python3	
+  - [your.VM.IP] ansible_python_interpreter=/usr/bin/python3
 
-- [elk]
-- [your_VM_IP] ansible_python_interpreter=/usr/bin/python3
+  [elk]
+  - [your_VM_IP] ansible_python_interpreter=/usr/bin/python3
 - Run the playbook using the command "ansible-playbook (name-of-playbook), and navigate to Kibana (http://[Public IP]:5601/app/kibana) to check that the installation worked as expected.
