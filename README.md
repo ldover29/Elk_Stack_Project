@@ -93,11 +93,11 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the configuration and playbook file that is provided to "etc/ansible" directory in the ansible container
-- Update the "hosts" file to include the private IP address of the machine that will be installing and configure ELK.
-  e.g
+- Update the "hosts" file to include the private IP address of the machine that will be installing and configure ELK. Example below:
+ 
   [webservers]
-  - [your.VM.IP] ansible_python_interpreter=/usr/bin/python3	
-  - [your.VM.IP] ansible_python_interpreter=/usr/bin/python3
+  - [your.private.IP] ansible_python_interpreter=/usr/bin/python3	
+  - [your.private.IP] ansible_python_interpreter=/usr/bin/python3
 
   [elk]
   - [your_VM_IP] ansible_python_interpreter=/usr/bin/python3
