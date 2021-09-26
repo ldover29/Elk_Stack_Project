@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-Images/docker_ps_output.png
+![name-of-you-image](https://github.com/ldover29/Elk_Stack_Project/blob/main/Diagrams/Images/docker_ps_output.png?raw=true)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -101,4 +101,4 @@ SSH into the control node and follow the steps below:
 
   [elk]
   - [your_VM_IP] ansible_python_interpreter=/usr/bin/python3
-- Run the playbook using the command "ansible-playbook (name-of-playbook), and navigate to Kibana (http://[Public IP]:5601/app/kibana) to check that the installation worked as expected.
+- Run the playbook using the command "ansible-playbook (name-of-playbook)", and navigate to Kibana (http://[Public IP]:5601/app/kibana) to check that the installation worked as expected.
