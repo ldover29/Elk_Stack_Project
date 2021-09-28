@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Date: $3"
+grep "$1 $2" 0310* | awk '{print $1,$2,$5,$6}'
+
